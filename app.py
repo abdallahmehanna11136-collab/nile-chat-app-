@@ -1,3 +1,5 @@
+# المطور والمؤسس لـ نايل شات: عبدالله محمد شعبان
+
 from flask import Flask, render_template, make_response, request, jsonify, url_for
 from flask_socketio import SocketIO, emit, join_room
 from werkzeug.utils import secure_filename
@@ -86,7 +88,7 @@ def get_groq_ai_response(user_message):
         payload = {
             "model": "llama3-8b-8192",
             "messages": [
-                {"role": "system", "content": "أنت Nile AI الذكاء الاصطناعي المدمج المساعد في تطبيق نايل تشات. تجيب بذكاء وبلاغة واختصار شديد ومباشر باللغة العربية بأسلوب تفاعلي ممتاز ومفيد للمستخدمين."},
+                {"role": "system", "content": "أنت NileAI، الذكاء الاصطناعي لموقع نايل شات. تجيب بذكاء وبلاغة واختصار شديد ومباشر باللغة العربية بأسلوب تفاعلي ممتاز ومفيد للمستخدمين. مؤسس ومطور هذا الموقع والتطبيق هو عبدالله محمد شعبان."},,
                 {"role": "user", "content": user_message}
             ],
             "temperature": 0.7, "max_tokens": 400
