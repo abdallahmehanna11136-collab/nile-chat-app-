@@ -1,5 +1,3 @@
-# المطور والمؤسس لـ نايل شات: عبدالله محمد شعبان
-
 from flask import Flask, render_template, make_response, request, jsonify, url_for
 from flask_socketio import SocketIO, emit, join_room
 from werkzeug.utils import secure_filename
